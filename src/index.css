@@ -1,0 +1,43 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#dropZone {
+  border: 1px dashed;
+  height: 150px;
+  text-align: center;
+  padding: 10px 10px 25px 10px;
+}
+
+#btnContainer {
+  margin-top: 30px;
+}
+
+#containerUploadedItems {
+  max-height: 200px;
+  overflow: auto;
+  scrollbar-width: thin;
+  padding: 10px 10px 25px 10px;
+}
+
+#settingsToggle {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.5em;
+}
+
+#settingsBox {
+  border-radius: 5%;
+  width: 50%;
+  height: 40%;
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  z-index: 1;
+}
