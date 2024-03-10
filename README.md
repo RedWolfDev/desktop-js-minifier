@@ -7,7 +7,6 @@ Current file limit: 5\
 Current file size limit: 5MB
 
 ## How to use the application
-To use the application you can download the executable file from the following link: add link.\
 Before uploading any files open the settings (gear icon) and insert the path where you want the minified files to be saved.\
 Then drag the files you want to minify into the drop zone and click on the "Minify JS Files" button.
 
