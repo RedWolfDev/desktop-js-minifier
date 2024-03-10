@@ -30,6 +30,12 @@ body {
   top: 5px;
   right: 10px;
   font-size: 1.5em;
+  display: flex;
+}
+
+#settingsToggle .fa-circle-info {
+  position: absolute;
+  right: 35px;
 }
 
 #settingsBox {

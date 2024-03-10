@@ -1,14 +1,17 @@
 import { getMinifiedFileFromApi } from './minify.js'
 
+const { shell } = require('electron')
+
 const MAX_FILE_SIZE = 5 * 1024 * 1024;
 const MAX_FILE_NUMBER = 5;
 
 const dropZone = document.getElementById("dropZone");
 const btnMinifyFiles = document.getElementById("btnMinifyFiles");
 const btnClearAllFiles = document.getElementById("btnClearAllFiles");
-const settingsToggle = document.getElementById("settingsToggle");
+const settingsToggle = document.getElementById("settingsIcon");
 const minifiedFilesPath = document.getElementById("minifiedFilesPath");
 const minifiedFolderPath = localStorage.getItem("minifiedFilesPath");
+const documentationLink = document.getElementById("documentationLink");
 
 let uploadedFiles = [];
 
@@ -18,6 +21,7 @@ btnMinifyFiles.onclick = minifyUploadedFiles;
 btnClearAllFiles.onclick = clearAllFiles;
 settingsToggle.onclick = toggleSettings;
 minifiedFilesPath.onblur = saveFolderInLocalStorage;
+documentationLink.onclick = openDocumentation;
 
 if(minifiedFolderPath) {
     minifiedFilesPath.value = minifiedFolderPath
@@ -137,4 +141,8 @@ function saveFolderInLocalStorage(event) {
         event.target.value = "";
         throw new Error("Invalid path!");
     }
+}
+
+function openDocumentation() {
+    shell.openExternal("https://github.com/RedWolfDev/desktop-js-minifier/blob/main/README.md");
 }
