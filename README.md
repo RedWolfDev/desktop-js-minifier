@@ -11,5 +11,5 @@ To use the application you can download the executable file from the following l
 Before uploading any files open the settings (gear icon) and insert the path where you want the minified files to be saved.\
 Then drag the files you want to minify into the drop zone and click on the "Minify JS Files" button.\
 
-In case you made any mistakes while uploading the files you can delete all of them using the "Clear all files" button or by clicking on the 'X' next to the file\
-you want to delete.
+In case you made any mistakes while uploading the files you can delete all of them using the "Clear all files"\
+button or by clicking on the 'X' next to the file you want to delete.
