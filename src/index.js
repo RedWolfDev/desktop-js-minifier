@@ -11,6 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: path.join(__dirname, 'img/favicon-32x32.png'),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
